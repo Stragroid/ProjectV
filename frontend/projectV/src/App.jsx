@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './page/Login';
+// import Login from './page/Login';
 import AuthenticatedRoute from './component/AuthenticationRoute';
 function App() {
   const [count, setCount] = useState(0)
