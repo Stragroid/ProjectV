@@ -1,0 +1,114 @@
+/* home.css */
+
+.home-landing {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+  }
+#user {
+    text-align: right;
+}
+  .left {
+    flex: 1;
+    padding: 20px;
+    align-self: center;
+  }
+  
+  .name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: rgb(206, 135, 3);
+  }
+  
+  .slogan {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .right {
+    flex: 2;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+  }
+  
+  .message {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .feed {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+  .timestamp {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .post-content {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .post-footer {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .like-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .like-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .comments {
+    margin-top: 10px;
+  }
+  
+  .comment {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .comment-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .comment-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  

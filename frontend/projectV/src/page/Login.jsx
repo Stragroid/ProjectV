@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react'
+import "../css/login.css"
 
-function Login() {
+export default function Login() {
+    const [userData, setUserData] = useState({
+        email: null,
+        password: null
+    })
+    const handleSubmit = () => {
+        console.console.log("User logging in.");
+    }
   return (
     <section id='login-body'>
             <div id='namedes-box'>
@@ -11,16 +19,13 @@ function Login() {
                 <h2>Login</h2>
                 <form onSubmit={handleSubmit} id='login-form'>
                     <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder='Enter Email' value={email} onChange={(e) => setEmail(e.target.value)} required />
+                    <input type="email" id="email" name="email" placeholder='Enter Email' value={userData.email} onChange={(e) => setUserData((p) => {return {...p, email: e.target.value}})} required />
 
                     <label htmlFor="password">Password:</label>
-                    <input type="password" id="password" name="password" placeholder='Enter Password' value={password} onChange={(e) => setPassword(e.target.value)} required />
+                    <input type="password" id="password" name="password" placeholder='Enter Password' value={userData.password} onChange={(e) => setUserData((p) => {return {...p, password: e.target.value}})} required />
                     <button type="submit">Login</button>
                 </form>
-                {/* <p id='createAcc'>Don't have an account? <Link to="/signup">Create Now!</Link></p> */}
             </div>
         </section>
   );
 }
-
-export default Login;
